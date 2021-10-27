@@ -22,7 +22,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
 
-> C API for registering a Node-API module exporting a strided array interface for applying a binary callback to double-precision floating-point strided input arrays according to a strided mask array and assigning results to elements in a double-precision floating-point strided output array.
+> C API for registering a Node-API module exporting a strided array interface for applying a binary callback to double-precision floating-point strided input arrays according to a strided mask array and assigning results to a double-precision floating-point strided output array.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -128,7 +128,7 @@ npm install @stdlib/strided-napi-dmskmap2
 
 #### stdlib_strided_napi_dmskmap2( env, info, fcn )
 
-Invokes a strided array interface which applies a binary callback to double-precision floating-point strided input arrays according to a strided mask array and assigns results to elements in a double-precision floating-point strided output array.
+Invokes a strided array interface which applies a binary callback to double-precision floating-point strided input arrays according to a strided mask array and assigns results to a double-precision floating-point strided output array.
 
 ```c
 #include <node_api.h>
@@ -168,7 +168,7 @@ void stdlib_strided_napi_dmskmap2( napi_env env, napi_callback_info info, double
 
 #### STDLIB_STRIDED_NAPI_MODULE_DMSKMAP2( clbk )
 
-Macro for registering a Node-API module exporting a strided array interface for applying a binary callback to double-precision floating-point strided input arrays according to a strided mask array and assigning results to elements in a double-precision floating-point strided output array.
+Macro for registering a Node-API module exporting a strided array interface for applying a binary callback to double-precision floating-point strided input arrays according to a strided mask array and assigning results to a double-precision floating-point strided output array.
 
 ```c
 static double add( const double x, const double y ) {
